@@ -1,1 +1,0 @@
-I've created this just to check out how git works.
