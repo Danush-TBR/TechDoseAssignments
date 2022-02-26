@@ -1,5 +1,5 @@
 class sortColors {
-    public void sortColors(int[] arr) {
+    public void SortColors(int[] arr) {
         int low=0,median=0,high=arr.length-1,temp;
         while(median<=high){
             if(arr[median]==0){
