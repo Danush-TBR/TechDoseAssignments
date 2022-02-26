@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class quickSelect {
+public class QuickSelect {
     public static int findKthLargest(int[] arr, int k,int start,int end){
             int pivotIndex=Partiton(arr, start, end);
             System.out.println(pivotIndex+" "+(k-1));

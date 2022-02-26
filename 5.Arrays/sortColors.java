@@ -1,4 +1,4 @@
-class Solution {
+class sortColors {
     public void sortColors(int[] arr) {
         int low=0,median=0,high=arr.length-1,temp;
         while(median<=high){
