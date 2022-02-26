@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class CourseSchedule {
     public boolean isCyclic(List<List<Integer>> prerequsite,int curr,int[] visited){
         if(visited[curr]==1) return true;
         visited[curr]=1;
