@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*;
+class isGraphBipartite {
     public boolean isBipartite(int[][] graph) {
         int len=graph.length;
         int[] colour=new int[len];

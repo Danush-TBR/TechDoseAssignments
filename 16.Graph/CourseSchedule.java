@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public boolean isCyclic(List<List<Integer>> prerequsite,int curr,int[] visited){
         if(visited[curr]==1) return true;
