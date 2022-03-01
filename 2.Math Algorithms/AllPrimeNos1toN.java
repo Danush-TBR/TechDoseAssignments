@@ -12,5 +12,6 @@ public class AllPrimeNos1toN {
         for(int i=1;i<n;i++){
             if(primes[i]==false) System.out.print(i+1+" ");
         }
+        scanner.close();
     }
 }
