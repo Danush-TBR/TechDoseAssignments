@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class courseScheduleII {
     public boolean isCyclic(List<List<Integer>> graph,Stack<Integer> path,int curr,byte[] visited){
         if(visited[curr]==1) return true;
         visited[curr]=1;

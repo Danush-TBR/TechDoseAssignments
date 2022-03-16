@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class possibleBipartite {
     public boolean possibleBipartition(int n, int[][] dislikes) {
         List<List<Integer>> graph = new ArrayList<>();
         for(int i=0;i<n+1;i++) graph.add(new ArrayList<>());

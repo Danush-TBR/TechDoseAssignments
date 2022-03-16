@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class findAllPath {
     public void findPath(int[][] graph,int source,int target,List<List<Integer>> paths,List<Integer> path){
         if(source==target){
             paths.add(new ArrayList<>(path));
