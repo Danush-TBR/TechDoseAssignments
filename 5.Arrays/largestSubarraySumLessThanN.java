@@ -10,29 +10,41 @@ public class largestSubarraySumLessThanN {
         int K=scanner.nextInt();
         int l=0,r=0,currSum=0;
         while(r<N){
-            // System.out.println(l+" "+r);
-            if(currSum<K){
-                currSum+=arr[r];
-                if(currSum<=K){
-                    // System.out.println(l+" "+r+" "+currSum);
-                    max_len=Math.max(r-l+1,max_len);
-                }
-                r++;
+            currSum+=arr[r];
+            if(currSum<=K){
+                max_len=Math.max(max_len,r-l+1);
             }
-            else if(arr[r]>K){
-                l=r+1;
-                r=r+1;
-                currSum=0;
-            }
-            else{
+            while(currSum>K){
                 currSum-=arr[l];
                 l++;
-                if(l==r){
-                    l++; r++;
-                }
             }
+            r++;
         }
         System.out.println(max_len);
+        // while(r<N){
+        //     // System.out.println(l+" "+r);
+        //     if(currSum<K){
+        //         currSum+=arr[r];
+        //         if(currSum<=K){
+        //             // System.out.println(l+" "+r+" "+currSum);
+        //             max_len=Math.max(r-l+1,max_len);
+        //         }
+        //         r++;
+        //     }
+        //     else if(arr[r]>K){
+        //         l=r+1;
+        //         r=r+1;
+        //         currSum=0;
+        //     }
+        //     else{
+        //         currSum-=arr[l];
+        //         l++;
+        //         if(l==r){
+        //             l++; r++;
+        //         }
+        //     }
+        // }
+        // System.out.println(max_len);
         scanner.close();
     }
 }
