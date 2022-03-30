@@ -1,8 +1,9 @@
+import java.util.*;
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
         int len=nums.length,a=0,b=0,cnt1=0,cnt2=0; int K=len/3;
         // if(len==0) new ArrayList<Integer>();
-        List myList = new ArrayList<Integer>();
+        List<Integer> myList = new ArrayList<Integer>();
         for(int i:nums){
             if(a==i) cnt1++;
             else if(b==i) cnt2++;
