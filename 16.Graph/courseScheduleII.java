@@ -15,8 +15,7 @@ class courseScheduleII {
         List<List<Integer>> graph = new ArrayList<>();
         Stack<Integer> path = new Stack<Integer>();
         for(int i=0;i<numCourses;i++) graph.add(new ArrayList<>());
-        for(int i=0;i<prerequisites.length;i++)
-            graph.get(prerequisites[i][1]).add(prerequisites[i][0]);
+        for (int[] prerequisite : prerequisites) graph.get(prerequisite[1]).add(prerequisite[0]);
         byte[] visited = new byte[numCourses];
         for(int i=0;i<numCourses;i++){
             if(visited[i]==1) return new int[0];
